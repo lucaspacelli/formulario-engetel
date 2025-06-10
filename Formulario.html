@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Teste de Perfil | Grupo Engetel</title>
+<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEVHcEztUye6JSe+KCfrUifsUifsUifELye3Iye3IyfrUifrUifEMCe3Iye5JCe3IyfDLiftUye8KCe3IifLNSfrUifSOyfrUifrUie8KCftUye3IyfrUifrUie3Iye3IyfsUie5JCfFMCfrUiftUyee661eAAAAJXRSTlMAg9MoSO7/+/+gEsP290jAB0GvaA+QHHutjtgzNVN7WZ/k/89taZmObAAAAQZJREFUeAF10ldywzAMRdGnTtvqvff9rzECOFSElPt7xiQBCyLLdvBPrucH6vUnvT++74dKRfFvs3wqUFdJKinzfC5XXPGg8qOpApyE1a6NNZraN64Md/oh+sS+hmlgjXA1EnlT+jE6K/MqjR/grc/FEhGZeQhbwqs13oh4E/PwRGon2gZg2NQD8SEML5uBlOZ9IsaDkCYslJJYjsDY7wWfSNnl8862BlI+kVrka3mWQpnnpuKXlK3Mc4v7zo/BkGzW9zr3+lw4H41Jyfca5I6aZtmjmJdrEPWheQWyDogj+Y+6nuYTqBOmaMF3p1avU1wH2coa3CfKan6tPFF+goE4UXbm4sQvEFUVUi29QsoAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
+<link rel="stylesheet" href="formulário.css">
+</head>
+<div class="withebanner">
+<div class="headerpolygon">
+<img alt="Logo Engetel" class="logo" src="https://www.grupoengetel.com.br/img/logo-engetel-branca.svg"/>
+</div>
+</div>
+<body>
+<h1>Formulário de perfil do candidato</h1>
+<h2>Preencha o formulário abaixo para o mapeamento de perfil</h2>
+<form id="perfilForm">
+<labelstr for="nome">Nome:</labelstr>
+<input id="nome" name="nome" required="" title="Digite seu nome completo" type="text"/>
+
+<labelstr for="cpf">CPF:</labelstr>
+<input id="cpf" name="cpf" pattern="\d{11}" required="" title="Digite seu CPF com 11 dígitos, sem pontos ou traços" type="text"/>
+
+<h1>Parte 1: Mapeamento de intelecto - analise as seguintes afirmações e atribua um número entre 0, 2, 4 ou 8 conforme abaixo:</h1>
+<texto>Número 8: característica que mais tem a ver com você</texto>
+<texto>Número 4: característica que tem a ver com você (relação de média para alta)</texto>
+<texto>Número 2: característica que tem a ver com você (relação de média para baixa)</texto>
+<texto>Número 0: característica que menos tem a ver com você</texto>
+<h3>Você deverá escolher seis vezes cada intensidade (seis frases com o número 0, seis frases com o número 2, seis frases com o número 4 e seis frases com o número 8), totalizando 24 frases assinaladas. </h3>
+<div id="perguntas"></div>
+<h1>Parte 2: Mapeamento de intelecto - analise as seguintes afirmações e selecione quatro opções que tem mais a ver com você:</h1>
+<h3>Em cada bloco abaixo há 16 alternativas e você deverá escolher as 4 opções que melhor lhe descrevem</h3>
+<div class="container">
+<div class="question">Atividades de minha preferência na infância (assinale quatro):</div>
+<div class="options2" data-group="infancia[]">
+<input id="INF1" name="infancia" type="checkbox" value="Aeromodelismo"/>
+<label for="INF1">Aeromodelismo</label>
+<input id="INF2" name="infancia" type="checkbox" value="Amarelinha"/>
+<label for="INF2">Amarelinha</label>
+<input id="INF3" name="infancia" type="checkbox" value="Jogos de Tabuleiro"/>
+<label for="INF3">Jogos de Tabuleiro</label>
+<input id="INF4" name="infancia" type="checkbox" value="Bonecas/bonecos"/>
+<label for="INF4">Bonecas/bonecos</label>
+<input id="INF5" name="infancia" type="checkbox" value="Bolas de gude"/>
+<label for="INF5">Bolas de gude</label>
+<input id="INF6" name="infancia" type="checkbox" value="Ciranda"/>
+<label for="INF6">Ciranda</label>
+<input id="INF7" name="infancia" type="checkbox" value="Decifrar charadas"/>
+<label for="INF7">Decifrar charadas</label>
+<input id="INF8" name="infancia" type="checkbox" value="Desenhar"/>
+<label for="INF8">Desenhar</label>
+<input id="INF9" name="infancia" type="checkbox" value="Desmontar coisas"/>
+<label for="INF9">Desmontar coisas</label>
+<input id="INF10" name="infancia" type="checkbox" value="Empinar pipa"/>
+<label for="INF10">Empinar pipa</label>
+<input id="INF11" name="infancia" type="checkbox" value="Futebol de botão"/>
+<label for="INF11">Futebol de botão</label>
+<input id="INF12" name="infancia" type="checkbox" value="Jogo da Velha"/>
+<label for="INF12">Jogo da Velha</label>
+<input id="INF13" name="infancia" type="checkbox" value="Jogos de bola"/>
+<label for="INF13">Jogos de bola</label>
+<input id="INF14" name="infancia" type="checkbox" value="Mocinho/bandido"/>
+<label for="INF14">Mocinho/bandido</label>
+<input id="INF15" name="infancia" type="checkbox" value="Quebra-cabeças"/>
+<label for="INF15">Quebra-cabeças</label>
+<input id="INF16" name="infancia" type="checkbox" value="Jogo de xadrez"/>
+<label for="INF16">Jogo de xadrez</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Atividades de minha preferência na escola (assinale quatro):</div>
+<div class="options2" data-group="escola[]">
+<input id="ESC1" name="escola" type="checkbox" value="Aritmética/matemática"/>
+<label for="ESC1">Aritmética/matemática</label>
+<input id="ESC2" name="escola" type="checkbox" value="Ciências físicas/física"/>
+<label for="ESC2">Ciências físicas/físic</label>
+<input id="ESC3" name="escola" type="checkbox" value="Humanas/psicologia"/>
+<label for="ESC3">Humanas/psicologia</label>
+<input id="ESC4" name="escola" type="checkbox" value="Desenho Artístico"/>
+<label for="ESC4">Desenho Artístico</label>
+<input id="ESC5" name="escola" type="checkbox" value="Engenharia"/>
+<label for="ESC5">Engenharia</label>
+<input id="ESC6" name="escola" type="checkbox" value="Economia"/>
+<label for="ESC6">Economia</label>
+<input id="ESC7" name="escola" type="checkbox" value="Geografia"/>
+<label for="ESC7">Geografia</label>
+<input id="ESC8" name="escola" type="checkbox" value="Geometria"/>
+<label for="ESC8">Geometria</label>
+<input id="ESC9" name="escola" type="checkbox" value="História"/>
+<label for="ESC9">História</label>
+<input id="ESC10" name="escola" type="checkbox" value="Leitura"/>
+<label for="ESC10">Leitura</label>
+<input id="ESC11" name="escola" type="checkbox" value="Línguas"/>
+<label for="ESC11">Línguas</label>
+<input id="ESC12" name="escola" type="checkbox" value="Música"/>
+<label for="ESC12">Música</label>
+<input id="ESC13" name="escola" type="checkbox" value="Poesia/declamação"/>
+<label for="ESC13">Poesia/declamação</label>
+<input id="ESC14" name="escola" type="checkbox" value="Português/gramática"/>
+<label for="ESC14">Português/gramática</label>
+<input id="ESC15" name="escola" type="checkbox" value="Redação/composição"/>
+<label for="ESC15">Redação/composição</label>
+<input id="ESC16" name="escola" type="checkbox" value="Trabalhos manuais"/>
+<label for="ESC16">Trabalhos manuais</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Atividades de minha preferência no trabalho (assinale quatro):</div>
+<div class="options2" data-group="trabalho[]">
+<input id="TRA1" name="trabalho" type="checkbox" value="Administração de processos"/>
+<label for="TRA1">Administração de processos</label>
+<input id="TRA2" name="trabalho" type="checkbox" value="Análise de problemas"/>
+<label for="TRA2">Análise de problemas</label>
+<input id="TRA3" name="trabalho" type="checkbox" value="Assuntos administrativos"/>
+<label for="TRA3">Assuntos administrativos</label>
+<input id="TRA4" name="trabalho" type="checkbox" value="Assuntos financeiros"/>
+<label for="TRA4">Assuntos financeiros</label>
+<input id="TRA5" name="trabalho" type="checkbox" value="Assuntos humanos/sociais"/>
+<label for="TRA5">Assuntos humanos/sociais</label>
+<input id="TRA6" name="trabalho" type="checkbox" value="Assuntos técnicos"/>
+<label for="TRA6">Assuntos técnicos</label>
+<input id="TRA7" name="trabalho" type="checkbox" value="Criação/desenvolvimento de idéias"/>
+<label for="TRA7">Criação/desenvolvimento de idéias</label>
+<input id="TRA8" name="trabalho" type="checkbox" value="Ensinar/treinar"/>
+<label for="TRA8">Ensinar/treinar</label>
+<input id="TRA9" name="trabalho" type="checkbox" value="Estruturas/organização"/>
+<label for="TRA9">Estruturas/organização</label>
+<input id="TRA10" name="trabalho" type="checkbox" value="Orçamentos"/>
+<label for="TRA10">Orçamentos</label>
+<input id="TRA11" name="trabalho" type="checkbox" value="Planos de ação"/>
+<label for="TRA11">Planos de ação</label>
+<input id="TRA12" name="trabalho" type="checkbox" value="Estratégia global"/>
+<label for="TRA12">Estratégia global</label>
+<input id="TRA13" name="trabalho" type="checkbox" value="Propaganda"/>
+<label for="TRA13">Propaganda</label>
+<input id="TRA14" name="trabalho" type="checkbox" value="Relações públicas"/>
+<label for="TRA14">Relações públicas</label>
+<input id="TRA15" name="trabalho" type="checkbox" value="Testes de mercado"/>
+<label for="TRA15">Testes de mercado</label>
+<input id="TRA16" name="trabalho" type="checkbox" value="Trabalho em equipe"/>
+<label for="TRA16">Trabalho em equipe</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Atividades de minha preferência no lazer (assinale quatro):</div>
+<div class="options2" data-group="lazer[]">
+<input id="LAZ1" name="lazer" type="checkbox" value="Artesanato"/>
+<label for="LAZ1">Artesanato</label>
+<input id="LAZ2" name="lazer" type="checkbox" value="Arrumar coisas"/>
+<label for="LAZ2">Arrumar coisas</label>
+<input id="LAZ3" name="lazer" type="checkbox" value="Assistir corridas"/>
+<label for="LAZ3">Assistir corridas</label>
+<input id="LAZ4" name="lazer" type="checkbox" value="Campismo"/>
+<label for="LAZ4">Campismo</label>
+<input id="LAZ5" name="lazer" type="checkbox" value="Coleções"/>
+<label for="LAZ5">Coleções</label>
+<input id="LAZ6" name="lazer" type="checkbox" value="Conhecer lugares novos"/>
+<label for="LAZ6">Conhecer lugares novos</label>
+<input id="LAZ7" name="lazer" type="checkbox" value="Consertar aparelhos"/>
+<label for="LAZ7">Consertar aparelhos</label>
+<input id="LAZ8" name="lazer" type="checkbox" value="Dançar"/>
+<label for="LAZ8">Dançar</label>
+<input id="LAZ9" name="lazer" type="checkbox" value="Desenho/pintura"/>
+<label for="LAZ9">Desenho/pintura</label>
+<input id="LAZ10" name="lazer" type="checkbox" value="Esportes coletivos"/>
+<label for="LAZ10">Esportes coletivos</label>
+<input id="LAZ11" name="lazer" type="checkbox" value="Fotografia"/>
+<label for="LAZ11">Fotografia</label>
+<input id="LAZ12" name="lazer" type="checkbox" value="Jogar xadrez"/>
+<label for="LAZ12">Jogar xadrez</label>
+<input id="LAZ13" name="lazer" type="checkbox" value="Leituras técnicas"/>
+<label for="LAZ13">Leituras técnicas</label>
+<input id="LAZ14" name="lazer" type="checkbox" value="Pescar"/>
+<label for="LAZ14">Pescar</label>
+<input id="LAZ15" name="lazer" type="checkbox" value="Reuniões sociais"/>
+<label for="LAZ15">Reuniões sociais</label>
+<input id="LAZ16" name="lazer" type="checkbox" value="Trabalhar com o computador"/>
+<label for="LAZ16">Trabalhar com o computador</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Palavras que melhor me descrevem (assinale quatro):</div>
+<div class="options2" data-group="descricao[]">
+<input id="DES1" name="descricao" type="checkbox" value="Afetuoso"/>
+<label for="DES1">Afetuoso</label>
+<input id="DES2" name="descricao" type="checkbox" value="Analítico"/>
+<label for="DES2">Analítico</label>
+<input id="DES3" name="descricao" type="checkbox" value="Brincalhão"/>
+<label for="DES3">Brincalhão</label>
+<input id="DES4" name="descricao" type="checkbox" value="Cauteloso"/>
+<label for="DES4">Cauteloso</label>
+<input id="DES5" name="descricao" type="checkbox" value="Detalhista"/>
+<label for="DES5">Detalhista</label>
+<input id="DES6" name="descricao" type="checkbox" value="Emotivo"/>
+<label for="DES6">Emotivo</label>
+<input id="DES7" name="descricao" type="checkbox" value="Esmerado"/>
+<label for="DES7">Esmerado</label>
+<input id="DES8" name="descricao" type="checkbox" value="Extrovertido"/>
+<label for="DES8">Extrovertido</label>
+<input id="DES9" name="descricao" type="checkbox" value="Falante"/>
+<label for="DES9">Falante</label>
+<input id="DES10" name="descricao" type="checkbox" value="Fantasioso"/>
+<label for="DES10">Fantasioso</label>
+<input id="DES11" name="descricao" type="checkbox" value="Introvertido"/>
+<label for="DES11">Introvertido</label>
+<input id="DES12" name="descricao" type="checkbox" value="Intuitivo"/>
+<label for="DES12">Intuitivo</label>
+<input id="DES13" name="descricao" type="checkbox" value="Organizado"/>
+<label for="DES13">Organizado</label>
+<input id="DES14" name="descricao" type="checkbox" value="Racional"/>
+<label for="DES14">Racional</label>
+<input id="DES15" name="descricao" type="checkbox" value="Subjetivo"/>
+<label for="DES15">Subjetivo</label>
+<input id="DES16" name="descricao" type="checkbox" value="Técnico"/>
+<label for="DES16">Técnico</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Minhas convicções (assinale as quatro frases que você, com mais entusiasmo, assinaria embaixo):</div>
+<div class="options2" data-group="conviccoes[]">
+<input id="CON1" name="conviccoes" type="checkbox" value="Só a informação traz o poder (Freud)"/>
+<label for="CON1">Só a informação traz o poder (Freud)</label>
+<input id="CON2" name="conviccoes" type="checkbox" value="Nunca ande pelo caminho traçado, pois ele conduz somente aonde outros já foram (Graham Bell)"/>
+<label for="CON2">Nunca ande pelo caminho traçado, pois ele conduz somente aonde outros já foram (Graham Bell)</label>
+<input id="CON3" name="conviccoes" type="checkbox" value="Se você quer civilizar um homem, comece pela avó dele (Victor Hugo)"/>
+<label for="CON3">Se você quer civilizar um homem, comece pela avó dele (Victor Hugo)</label>
+<input id="CON4" name="conviccoes" type="checkbox" value="O que mais precisamos é de alguém que nos obrigue a fazer o que sabemos (Ralph Waldo Emerson)"/>
+<label for="CON4">O que mais precisamos é de alguém que nos obrigue a fazer o que sabemos (Ralph Waldo Emerson)</label>
+<input id="CON5" name="conviccoes" type="checkbox" value="Mais vale um pássaro na mão do que dois voando (Popular)"/>
+<label for="CON5">Mais vale um pássaro na mão do que dois voando (Popular)</label>
+<input id="CON6" name="conviccoes" type="checkbox" value="O futuro pertence àqueles que acreditam na beleza de seus sonhos (Eleanor Roosevelt)"/>
+<label for="CON6">O futuro pertence àqueles que acreditam na beleza de seus sonhos (Eleanor Roosevelt)</label>
+<input id="CON7" name="conviccoes" type="checkbox" value="Quem sabe mais, chora menos (Popular)"/>
+<label for="CON7">Quem sabe mais, chora menos (Popular)</label>
+<input id="CON8" name="conviccoes" type="checkbox" value="Um irmão pode não ser um amigo, mas um amigo será sempre um irmão (Benjamin Franklin)"/>
+<label for="CON8">Um irmão pode não ser um amigo, mas um amigo será sempre um irmão (Benjamin Franklin)</label>
+<input id="CON9" name="conviccoes" type="checkbox" value="O passo mais importante para chegar a concentrar-se é aprender a estar sozinho consigo mesmo (Erich Fromm)"/>
+<label for="CON9">O passo mais importante para chegar a concentrar-se é aprender a estar sozinho consigo mesmo (Erich Fromm)</label>
+<input id="CON10" name="conviccoes" type="checkbox" value="A imaginação é mais importante do que o conhecimento (Albert Einstein)"/>
+<label for="CON10">A imaginação é mais importante do que o conhecimento (Albert Einstein)</label>
+<input id="CON11" name="conviccoes" type="checkbox" value="Uma andorinha só não faz verão (Popular)"/>
+<label for="CON11">Uma andorinha só não faz verão (Popular)</label>
+<input id="CON12" name="conviccoes" type="checkbox" value="Mais difícil do que levar uma vida organizada é impô-la aos outros (Marcel Proust)"/>
+<label for="CON12">Mais difícil do que levar uma vida organizada é impô-la aos outros (Marcel Proust)</label>
+<input id="CON13" name="conviccoes" type="checkbox" value="Uma alegria compartilhada transforma-se em dupla alegria; uma dor compartilhada, em meia dor (Popular)"/>
+<label for="CON13">Uma alegria compartilhada transforma-se em dupla alegria; uma dor compartilhada, em meia dor (Popular)</label>
+<input id="CON14" name="conviccoes" type="checkbox" value="O humor é a quebra da lógica (Henri Bergson)"/>
+<label for="CON14">O humor é a quebra da lógica (Henri Bergson)</label>
+<input id="CON15" name="conviccoes" type="checkbox" value="Quem não arrisca não petisca (Popular)"/>
+<label for="CON15">Quem não arrisca não petisca (Popular)</label>
+<input id="CON16" name="conviccoes" type="checkbox" value="O discernimento consiste em saber até onde se poder ir (Jean Cocteau)"/>
+<label for="CON16">O discernimento consiste em saber até onde se poder ir (Jean Cocteau)</label>
+</div>
+</div>
+
+<h1>Parte 3: Mapeamento de intelecto - Minhas motivações e reações</h1>
+<h4>Minhas motivações</h4>
+<div class="container">
+<div class="question">Eu trabalho melhor quando:</div>
+<div class="options2">
+<input id="EUT1" name="motivo1" required="" type="radio" value="Tudo está bem organizado"/>
+<label for="EUT1">Tudo está bem organizado</label>
+<input id="EUT2" name="motivo1" type="radio" value="Disponho de informações corretas"/>
+<label for="EUT2">Disponho de informações corretas</label>
+<input id="EUT3" name="motivo1" type="radio" value="Tenho oportunidade de usar a imaginação"/>
+<label for="EUT3">Tenho oportunidade de usar a imaginação</label>
+<input id="EUT4" name="motivo1" type="radio" value="Posso compartilhar minhas ideias com outros"/>
+<label for="EUT4">Posso compartilhar minhas ideias com outros</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Falta-me ânimo para empreender uma atividade quando:</div>
+<div class="options2">
+<input id="FAL1" name="motivo2" required="" type="radio" value="Não consigo vislumbrar sua utilidade prática"/>
+<label for="FAL1">Não consigo vislumbrar sua utilidade prática</label>
+<input id="FAL2" name="motivo2" type="radio" value="Ela não apresenta desafio para minha inteligência"/>
+<label for="FAL2">Ela não apresenta desafio para minha inteligência</label>
+<input id="FAL3" name="motivo2" type="radio" value="Tenho de trabalhar sozinho"/>
+<label for="FAL3">Tenho de trabalhar sozinho</label>
+<input id="FAL4" name="motivo2" type="radio" value="Tenho de trabalhar com pessoas indisciplinadas"/>
+<label for="FAL4">Tenho de trabalhar com pessoas indisciplinadas</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Eu me entusiasmo com uma atividade quando:</div>
+<div class="options2">
+<input id="EUM1" name="motivo3" required="" type="radio" value="Conheço tudo a respeito"/>
+<label for="EUM1">Conheço tudo a respeito</label>
+<input id="EUM2" name="motivo3" type="radio" value="Ela apresenta regras bem definidas"/>
+<label for="EUM2">Ela apresenta regras bem definidas</label>
+<input id="EUM3" name="motivo3" type="radio" value="As pessoas envolvidas trabalham em harmonia"/>
+<label for="EUM3">As pessoas envolvidas trabalham em harmonia</label>
+<input id="EUM4" name="motivo3" type="radio" value="Posso testar minha capacidade"/>
+<label for="EUM4">Posso testar minha capacidade</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Eu me aborreço quando:</div>
+<div class="options2">
+<input id="EUA1" name="motivo4" required="" type="radio" value="Vejo as coisas bagunçadas"/>
+<label for="EUA1">Vejo as coisas bagunçadas</label>
+<input id="EUA2" name="motivo4" type="radio" value="Não posso trabalhar com coisas concretas"/>
+<label for="EUA2">Não posso trabalhar com coisas concretas</label>
+<input id="EUA3" name="motivo4" type="radio" value="As pessoas discutem e brigam"/>
+<label for="EUA3">As pessoas discutem e brigam</label>
+<input id="EUA4" name="motivo4" type="radio" value="Cerceiam minha criatividade"/>
+<label for="EUA4">Cerceiam minha criatividade</label>
+</div>
+</div>
+<h4>Minhas reações</h4>
+<div class="container">
+<div class="question">Quando pedem minha aprovação para uma ideia:</div>
+<div class="options2">
+<input id="QUA1" name="reacao1" required="" type="radio" value="Quero examinar sua lógica e racionalidade"/>
+<label for="QUA1">Quero examinar sua lógica e racionalidade</label>
+<input id="QUA2" name="reacao1" type="radio" value="Preciso ter confiança nas pessoas envolvidas"/>
+<label for="QUA2">Preciso ter confiança nas pessoas envolvidas</label>
+<input id="QUA3" name="reacao1" type="radio" value="Quero saber como ela será executada na prática"/>
+<label for="QUA3">Quero saber como ela será executada na prática</label>
+<input id="QUA4" name="reacao1" type="radio" value="Quero descobrir se ela é inovadora"/>
+<label for="QUA4">Quero descobrir se ela é inovadora</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Quando resistem às minhas ideias:</div>
+<div class="options2">
+<input id="RES1" name="reacao2" required="" type="radio" value="Explico, passo a passo, sua aplicação"/>
+<label for="RES1">Explico, passo a passo, sua aplicação</label>
+<input id="RES2" name="reacao2" type="radio" value="Demonstro seu valor com dados e fatos"/>
+<label for="RES2">Demonstro seu valor com dados e fatos</label>
+<input id="RES3" name="reacao2" type="radio" value="Trato de granjear a simpatia dos envolvidos"/>
+<label for="RES3">Trato de granjear a simpatia dos envolvidos</label>
+<input id="RES4" name="reacao2" type="radio" value="Procuro estimular a imaginação dos envolvidos"/>
+<label for="RES4">Procuro estimular a imaginação dos envolvidos</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Quando não entendo uma instrução:</div>
+<div class="options2">
+<input id="NIN1" name="reacao3" required="" type="radio" value="É porque não me mostraram/explicaram em detalhes"/>
+<label for="NIN1">É porque não me mostraram/explicaram em detalhes</label>
+<input id="NIN2" name="reacao3" type="radio" value="É porque não entendo seus objetivos e coerência"/>
+<label for="NIN2">É porque não entendo seus objetivos e coerência</label>
+<input id="NIN3" name="reacao3" type="radio" value="É porque não gosto da instrução ou do instrutor"/>
+<label for="NIN3">É porque não gosto da instrução ou do instrutor</label>
+<input id="NIN4" name="reacao3" type="radio" value="É porque ela é muito “quadrada” ou conservadora"/>
+<label for="NIN4">É porque ela é muito “quadrada” ou conservadora</label>
+</div>
+</div>
+<div class="container">
+<div class="question">Quando não entendem minhas instruções:</div>
+<div class="options2">
+<input id="NON1" name="reacao4" required="" type="radio" value="Reenfatizo utilizando exemplos ilustrativos"/>
+<label for="NON1">Reenfatizo utilizando exemplos ilustrativos</label>
+<input id="NON2" name="reacao4" type="radio" value="Trato de chegar ao 'coração' dos envolvidos"/>
+<label for="NON2">Trato de chegar ao 'coração' dos envolvidos</label>
+<input id="NON3" name="reacao4" type="radio" value="Faço uma demonstração organizada de suas etapas"/>
+<label for="NON3">Faço uma demonstração organizada de suas etapas</label>
+<input id="NON4" name="reacao4" type="radio" value="Apresento todos os dados e fatos que as reforçam"/>
+<label for="NON4">Apresento todos os dados e fatos que as reforçam</label>
+</div>
+</div>
+
+<h1>Parte 4: Mapeamento do perfil mobilizador - Autopercepção</h1>
+<h3>Em cada Situação, especifique com que INTENSIDADE cada uma das AÇÕES mobilizam você, atribuindo os pesos 4, 3, 2 e 1:</h3>
+<texto>Nível 4 = Bastante vontade</texto>
+<texto>Nível 3 = Muita vontade</texto>
+<texto>Nível 2 = Razoável vontade</texto>
+<texto>Nível 1 = Pouca vontade</texto>
+
+<div id="parte4"></div>
+
+<h1>Parte 5: Mapeamento do perfil de reação frente ao conflito – Autopercepção</h1>
+<h3>Ao ouvir as seguintes objeções de um liderado, o que responderia de imediato?</h3>
+<div id="parte5"></div>
+
+<h1>Parte 6: Mapeamento do perfil de liderança – Autopercepção</h1>
+<h3>Imagine-se nas situções abaixo e selecione uma opção de como você agiria.</h3>
+<div id="parte6"></div>
+
+<button type="submit">Enviar</button>
+</form>
+
+<!-- 🔔 Toast pop-up -->
+<div id="toast"></div>
+
+<script src="formulário.js"></script>
+
+</body>
+</html>

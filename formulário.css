@@ -1,0 +1,453 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('fontes/subset-SegoeUI.eot');
+    src: local('Segoe UI'), local('SegoeUI'), url('fontes/subset-SegoeUI.eot?#iefix') format('embedded-opentype'), url('fontes/subset-SegoeUI.woff2') format('woff2'), url('fontes/subset-SegoeUI.woff') format('woff'), url('fontes/subset-SegoeUI.ttf') format('truetype'), url('fontes/subset-SegoeUI.svg#SegoeUI') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    --cor-primaria: #2e2924;
+    --cor-secundaria: #787878;
+    --cor-terciaria: #EB5228;
+    --cor-quartenaria: #B72C31;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font: 400 16px/24px 'Segoe UI', sans-serif;
+    color: var(--cor-preto);
+}
+
+label.selecionado {
+  background-color: var(--cor-terciaria);
+  color: white;
+  border-color: var(--cor-terciaria);
+}
+
+label.selecionado span {
+  color: white;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"], [type="button"], input[type="file"] {
+    cursor: pointer;
+}
+
+input {
+  display: flexbox;
+  margin: 10px 50px 25px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font: 400 16px/24px 'Segoe UI', sans-serif;
+  text-size-adjust: auto;
+  color: var(--cor-preto);
+  outline: none;
+  border: Solid 1px #cecece;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    font: 400 16px/24px 'Segoe UI', sans-serif;
+    text-size-adjust: none;
+    color: var(--cor-branco);
+    outline: none;
+    border: none;
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
+}
+
+select, optgroup, textarea {
+    display: inline-block;
+    padding: 0px;
+    font: 400 16px/24px 'Segoe UI', sans-serif;
+    text-size-adjust: none;
+    color: var(--cor-primaria);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--cor-primaria);
+    padding-bottom: 45px;
+    
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--cor-primaria);
+    padding-top: 25px;
+    
+}
+
+h5 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-align: center;
+}
+
+p {
+text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 20px 0 rgba(78, 73, 68, 0.2);
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+body {
+    font-family: 'Segoe UI';
+    max-width: 95%;
+    margin: auto;
+    background-color: #ffffff;
+    padding-top: 80px; /* ajuste conforme a altura do cabeçalho */
+    }
+
+.headerpolygon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 80px;
+    background: var(--cor-terciaria);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 40px) 100%, 0 100%, 0% 50%);
+    z-index: 1;
+    }
+
+.withebanner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--cor-branco);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+.logo {
+    position: absolute;
+    content: url("https://www.grupoengetel.com.br/img/logo-engetel-branca.svg");
+    max-height: 75%;
+    left: 50%;
+    top: 10px;
+    bottom: 10px;
+    }
+
+labelstr {
+      display:inline-block;
+      
+      margin-top: 7px;
+      margin-bottom: 7px;
+      font-size: large;
+}
+
+texto {
+  display:Grid;
+  
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--cor-primaria);
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  margin-right: 0;
+  font-size: 16px;
+  font: var(--cor-primaria);
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.options label {
+  display: inline-block;
+  padding: 0px 0px;
+  margin: 5px 8px 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: auto;
+  color: var(--cor-primaria);
+}
+
+/* Quando selecionado */
+.options input[type="radio"]:checked + span {
+  background-color: var(--cor-terciaria); /* laranja */
+  color: white;
+  border-color: var(--cor-terciaria);
+}
+
+.options label span {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--cor-primaria);
+}
+
+.options input[type="radio"]:checked + label span {
+  background-color: var(--cor-terciaria);
+  color: white;
+  border-color: var(--cor-terciaria);
+}
+
+.options2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  
+}
+
+.options2 option {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--cor-primaria);
+}
+
+.options2 label {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 15px;
+  color: var(--cor-primaria);
+}
+
+/* Estilo quando selecionado (checkbox ou radio) */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  background-color: var(--cor-terciaria); /* laranja */
+  color: white;
+  border-color: var(--cor-terciaria);
+}
+
+
+.options2 label span {
+  display: grid;
+  margin-top: -70%;
+  margin-left: -20%;
+  font-size: 16px;
+}
+
+.pergunta {
+  margin: 15px 0;
+  padding: 10px;
+  
+  border: 1px solid #ccccccbd;
+  color: var(--cor-primaria);
+  border-radius: 15px;
+}
+
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccccccbd;
+  border-radius: 8px;
+  color: var(--cor-primaria);
+}
+
+.question {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+    /* 🔔 Toast / Popup */
+#toast {
+      visibility: hidden;
+      min-width: 250px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      padding: 16px;
+      position: fixed;
+      z-index: 999;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: visibility 0s, opacity 0.5s ease-in-out;
+      opacity: 0;
+    }
+
+    #toast.success {
+      background-color: #4CAF50;
+    }
+
+    #toast.error {
+      background-color: #f44336;
+    }
+
+    #toast.show {
+      visibility: visible;
+      opacity: 1;
+    }
+ 
+    @media (max-width: 768px) {
+  body {
+    padding: 80px 10px;
+    font-size: 15px;
+    font: var(--cor-primaria);
+  }
+
+  .options2 {
+    grid-template-columns: 1fr; /* 1 coluna em mobile */
+  }
+
+ .options2 label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.options2 label span {
+  display: grid;
+  margin-top: 0%;
+  margin-left: -20%;
+  font-size: 16px;
+}
+
+  .options {
+    flex-direction: column;
+    font: var(--cor-primaria);
+  }
+
+  .options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.options label span {
+  margin: 0;
+  font-size: 16px;
+}
+
+  label {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 15px;
+    font: var(--cor-primaria);
+  }
+
+  select {
+    width: 45% !important;
+    margin: 5px 5px 5px 5px;
+    font-size: 16px;
+    font: var(--cor-primaria);
+  }
+
+  input {
+    width: 95% !important;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    font: var(--cor-primaria);
+  }
+
+  button {
+    width: 90%;
+    font-size: 16px;
+    height: 40px;
+    align-content: center;
+  }
+
+  .container {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .pergunta {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .pergunta label {
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .logo {
+    left: 10%;
+    width: 75%;
+  }
+
+  .headerpolygon {
+    width: 60%;
+    height: 60px;
+  }
+
+  .withebanner {
+    height: 60px;
+  }
+    }
