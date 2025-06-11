@@ -123,7 +123,7 @@ const form = e.target;
 
 const formData = new FormData(form);
 
-fetch("https://script.google.com/macros/s/AKfycbz2caXzZN-sMUstIyO5BnbZ6tkUgMwA3_RrfulB-eEsAQ5rN0hNsgiFuVKqgAQ57peLog/exec", /*Deploy_v16*/{
+fetch("https://script.google.com/macros/s/AKfycbzVTqc7Zl10pywljzvt-01Hrj22-NcH2h4pxFy500YnBYNOdsdsB_hGJ-A5unn_DnAvWA/exec", /*Deploy_v17*/{
   method: "POST",
   body: formData
 })
