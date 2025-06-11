@@ -122,11 +122,28 @@ const form = e.target;
   mostrarToast("⏳ Enviando respostas...", "");
 
 const formData = new FormData(form);
+const data = {};
 
-fetch("https://script.google.com/macros/s/AKfycbyxXdIeV-SiwsbaytbxIeg6OkaSOCeMJMsXnx5ek8gB4hzig_0QtlnX6qiTKa0CB7BkjA/exec", /*Deploy_v18*/{
+formData.forEach((value, key) => {
+  if (data[key]) {
+    if (Array.isArray(data[key])) {
+      data[key].push(value);
+    } else {
+      data[key] = [data[key], value];
+    }
+  } else {
+    data[key] = value;
+  }
+});
+
+fetch("https://script.google.com/macros/s/AKfycbyxXdIeV-SiwsbaytbxIeg6OkaSOCeMJMsXnx5ek8gB4hzig_0QtlnX6qiTKa0CB7BkjA/exec", {
   method: "POST",
-  body: formData
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data)
 })
+
 .then(() => {
   // Opcional: mostrar toast
   mostrarToast("✅ Respostas enviadas com sucesso!", "success");
