@@ -73,14 +73,4 @@ Este manual tem como objetivo orientar técnicos e desenvolvedores na manutenç�
 
 ---
 
-## 📇 9. Informações Adicionais
-
-**Autor:** Lucas (Analista de Planejamento)  
-**Ano:** 2025  
-**Projeto:** Formulário de Perfil do Candidato - Grupo Engetel  
-**Hospedagem:** GitHub Pages ou Netlify  
-**Repositório:** (adicionar link aqui)
-
----
-
 Este projeto é de uso interno do Grupo Engetel. Dúvidas técnicas podem ser encaminhadas ao responsável pela manutenção da área de planejamento.
