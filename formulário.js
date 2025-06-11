@@ -135,8 +135,8 @@ formData.forEach((value, key) => {
     data[key] = value;
   }
 });
-
-fetch("https://script.google.com/macros/s/AKfycbyxXdIeV-SiwsbaytbxIeg6OkaSOCeMJMsXnx5ek8gB4hzig_0QtlnX6qiTKa0CB7BkjA/exec", {
+// Deploy.v19
+fetch("https://script.google.com/macros/s/AKfycbwj73voEz5VB6b-4CedNHK6nSMSKJYqvup4j6BxWpW-v4jEGRysbfNLBnf_N8FsN8K_/exec", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
