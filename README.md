@@ -49,7 +49,7 @@ Este manual tem como objetivo orientar técnicos e desenvolvedores na manutenç�
 
 1. Substitua os arquivos atualizados no repositório.
 2. Faça commit das alterações.
-3. Acesse a URL gerada pelo GitHub Pages (ex: `https://seu-usuario.github.io/formulario-engetel/`).
+3. Acesse a URL gerada pelo GitHub Pages (ex: `https://lucaspacelli.github.io/formulario-engetel/`).
 
 > A publicação é automática após o push.
 
